@@ -35,11 +35,23 @@ wasm-pack --version
 #=> wasm-pack 0.10.2
 ```
 
+## build wasm
+
+```bash
+sh wasm_build.sh
+```
+
 ## vite
 
 ```bash
 npm ci
 $(npm bin)/vite --version
+```
+
+## try
+
+```bash
+npm run serve
 ```
 
 ## YOU!!!
