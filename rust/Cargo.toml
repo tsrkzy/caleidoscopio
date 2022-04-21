@@ -1,0 +1,14 @@
+[package]
+name = "caleidoscopio"
+version = "0.1.0"
+edition = "2021"
+authors = [
+    "tsrkzy <tsrmix@gmail.com>"
+]
+repository = "https://github.com/tsrkzy/caleidoscopio"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "^0.2"
