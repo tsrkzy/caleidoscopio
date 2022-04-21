@@ -1,12 +1,12 @@
 # caleidoscopio
 
-clone
+## clone
 
 ```bash
 gh repo clone tsrkzy/caleidoscopio
 ```
 
-rustup
+## rustup
 
 ```bash
 # ################## #
@@ -25,17 +25,24 @@ cargo --version
 #=> cargo 1.60.0 (d1fd9fe2c 2022-03-01)
 #
 #
-cargo install
-cargo install --list
+#
+# install build-tool
+#
+cargo install wasm-pack
 #=> wasm-pack v0.10.2:
-#=>     wasm-pack
-#=> ...
 #
 wasm-pack --version
 #=> wasm-pack 0.10.2
 ```
 
-join us
+## vite
+
+```bash
+npm ci
+$(npm bin)/vite --version
+```
+
+## YOU!!!
 
 ```bash
 echo $(git config user.name)' <'$(git config user.email)'>' | pbcopy
