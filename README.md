@@ -8,31 +8,26 @@ gh repo clone tsrkzy/caleidoscopio
 
 ## rustup
 
+GOTO [rust-lang/get-started](https://www.rust-lang.org/ja/learn/get-started)
+
 ```bash
-# ################## #
-# install rust-lang! #
-# ################## #
-#
-# @GOTO https://www.rust-lang.org/ja/learn/get-started
-#
-# after that
-#
 rustup --version
 #=> rustup 1.24.3 (ce5817a94 2021-05-31)
-#
-#
+
 cargo --version
 #=> cargo 1.60.0 (d1fd9fe2c 2022-03-01)
-#
-#
-#
-# install build-tool
-#
+```
+
+## install build-tool
+
+```bash
 cargo install wasm-pack
-#=> wasm-pack v0.10.2:
-#
 wasm-pack --version
 #=> wasm-pack 0.10.2
+
+cargo install cargo-watch
+cargo-watch --version                                                                                                        +[main]
+#=> cargo-watch 8.1.1
 ```
 
 ## build wasm
@@ -41,14 +36,14 @@ wasm-pack --version
 sh wasm_build.sh
 ```
 
-## vite
+## install vite
 
 ```bash
 npm ci
 $(npm bin)/vite --version
 ```
 
-## try
+## start vite/server
 
 ```bash
 npm run serve
