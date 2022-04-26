@@ -1,5 +1,7 @@
 # caleidoscopio
 
+[try here](https://tsrkzy.github.io/caleidoscopio/)
+
 ## clone
 
 ```bash

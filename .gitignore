@@ -161,3 +161,4 @@ dist
 /.idea
 
 /rust/README.md
+.DS_Store

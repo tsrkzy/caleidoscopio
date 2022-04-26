@@ -1,3 +1,11 @@
+# ######################################################
+# ######################################################
+#
+# このファイルはできるだけcargo-editを使用して編集してください
+# @REF https://github.com/killercup/cargo-edit
+#
+# ex.)
+# $ cargo add web-sys --features 'Document Element HtmlElement SvgElement SvgCircleElement Node Window console'
 [package]
 name = "caleidoscopio"
 version = "0.1.0"
@@ -12,3 +20,8 @@ crate-type = ["cdylib"]
 
 [dependencies]
 wasm-bindgen = "0.2.80"
+web-sys = { version = "0.3.57", features = ["Document", "Element", "HtmlElement", "SvgElement", "SvgCircleElement", "Node", "Window", "console"] }
+
+[dev-dependencies]
+cargo-watch = "8.1.1"
+wasm-pack = "0.10.2"

@@ -1,21 +1,22 @@
 {
-  "name": "caleidoscopio",
-  "version": "1.0.0",
-  "description": "clone",
-  "main": "index.js",
-  "scripts": {
-    "serve": "$(npm bin)/vite"
+  "name":         "caleidoscopio",
+  "version":      "1.0.0",
+  "description":  "clone",
+  "main":         "index.js",
+  "scripts":      {
+    "serve":   "$(npm bin)/vite --config vite.config.js",
+    "build":   "sh wasm_build.sh && $(npm bin)/vite --config vite.config.js build && sh update_gh_pages.sh"
   },
-  "repository": {
+  "repository":   {
     "type": "git",
-    "url": "git+https://github.com/tsrkzy/caleidoscopio.git"
+    "url":  "git+https://github.com/tsrkzy/caleidoscopio.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
+  "author":       "",
+  "license":      "ISC",
+  "bugs":         {
     "url": "https://github.com/tsrkzy/caleidoscopio/issues"
   },
-  "homepage": "https://github.com/tsrkzy/caleidoscopio#readme",
+  "homepage":     "https://github.com/tsrkzy/caleidoscopio#readme",
   "dependencies": {
     "vite": "^2.9.5"
   }

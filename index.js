@@ -1,4 +1,4 @@
-import init, { greet } from "./rust/pkg/caleidoscopio";
+import init, { greet } from "./rust/pkg/caleidoscopio.js";
 
 (() => {
   document.addEventListener("DOMContentLoaded", async () => {
