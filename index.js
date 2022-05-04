@@ -21,6 +21,8 @@ import { Universe as JsUniverse } from "./src/universe.js";
 
 
     function startWasm() {
+      deactivateStartButton();
+
       const renderLoop = () => {
         console.time("wasm");
         $pre.textContent = universe.render();
@@ -33,6 +35,8 @@ import { Universe as JsUniverse } from "./src/universe.js";
     }
 
     function startJs() {
+      deactivateStartButton();
+
       const u = new JsUniverse();
 
       const renderLoop = () => {
@@ -44,6 +48,13 @@ import { Universe as JsUniverse } from "./src/universe.js";
       };
 
       requestAnimationFrame(renderLoop);
+    }
+
+    function deactivateStartButton() {
+      const $elList = document.getElementsByClassName("start_button");
+      for (const $el of $elList) {
+        $el.setAttribute("disabled", true);
+      }
     }
   });
 })();
